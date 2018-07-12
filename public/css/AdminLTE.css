@@ -167,7 +167,7 @@ h6,
 }
 /* General Links */
 a {
-  color: #3c8dbc;
+  color: #5abc3c;
 }
 a:hover,
 a:active,
@@ -199,11 +199,11 @@ a:focus {
   -webkit-transition: margin-left 0.3s ease-in-out;
   -o-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
-  margin-bottom: 0;
+  margin-bottom: 5;
   margin-left: 230px;
-  border: none;
+  border: circle;
   min-height: 50px;
-  border-radius: 0;
+  border-radius: 5;
 }
 .layout-top-nav .main-header > .navbar {
   margin-left: 0;
@@ -336,7 +336,7 @@ a:focus {
   border-radius: 2px;
 }
 .content-header > .breadcrumb > li > a {
-  color: #444;
+  color: rgb(68, 68, 68);
   text-decoration: none;
   display: inline-block;
 }
@@ -359,7 +359,7 @@ a:focus {
     padding-left: 10px;
   }
   .content-header > .breadcrumb li:before {
-    color: #97a0b3;
+    color: #9eb397;
   }
 }
 .navbar-toggle {

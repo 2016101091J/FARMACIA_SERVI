@@ -15,10 +15,13 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Route::resource('almacen/categoria','CategoriaController');
+Route::resource('almacen/productos','CategoriaController');
 Route::resource('almacen/articulo','ArticuloController');
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+/*Route::get('/home', 'HomeController@index');
 Route::get('/{slug?}', 'HomeController@index');
+Route::auth();*/
+
+Route::get('/home', 'HomeController@index');

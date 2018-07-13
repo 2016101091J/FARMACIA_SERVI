@@ -1,61 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FARMACIA | SERVI</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
-    <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
-    <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SERVI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
-  <body class="hold-transition skin-blue sidebar-mini">
-    <div class="wrapper">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/main.css')}}">
+        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+        <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+        
 
-      <header class="main-header">
+        <!-- Js -->
+        <script src="{{asset('js/vendor/modernizr-2.6.2.min.js')}}"></script>
+        <script src="{{asset('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')}}"></script>
+        <script>window.jQuery || document.write('<script src="{{asset('js/vendor/jquery-1.10.2.min.js')}}"><\/script>')</script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/plugins.js')}}"></script>
+        <script src="{{asset('js/main.js')}}"></script>
+        <script src="{{asset('js/wow.min.js')}}"></script>
+        <script>
+         new WOW(
+            ).init();
+        </script>
 
-        <!-- Logo -->
-        <a href="index2.html" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>F</b>S</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>SERVI v.1.0</b></span>
-        </a>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Navegación</span>
-          </a>
-          <!-- Navbar Right Menu -->
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-defaul">
-              <!-- Messages: style can be found in dropdown.less-->
-              
-              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <small class="bg-red">servi</small>
-                  <span class="hidden-xs">ADMINISTRADOR</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
+          ga('create', 'UA-57708809-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+    <body>
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    
+                        <img src="https://static.miweb.padigital.es/var/m_7/79/79e/4922/84880-Icono-remedio.png" height="50px" width="50px">
+                    
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <div class="menu">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#banner">PRODUCTOS</a></li>
+                                    </ul>
+                                  
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+					<li class="dropdown user user-menu">
+                		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 		 <small class="bg-red"></small>
+                  		<span class="hidden-xs">ADMINISTRADOR</span>
+							</a>
+					<ul class="dropdown-menu">
+					<!-- User image -->
                   <li class="user-header">
                     
                     <p>
-                      Sistemas UNCP
-                      <small>www.facebook.com</small>
+                     CERRAR SESION
                     </p>
                   </li>
                   
@@ -63,105 +94,51 @@
                   <li class="user-footer">
                     
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Cerrar</a>
+                      <a href="{{url('/logout')}}" class="btn btn-default btn-flat">Cerrar</a>
                     </div>
                   </li>
                 </ul>
               </li>
-              
-            </ul>
-          </div>
-
-        </nav>
-      </header>
-      <!-- Left side column. contains the logo and sidebar -->
-      <div class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-          <!-- Sidebar user panel -->
-                    
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header"></li>
-            
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>Almacén</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{url('almacen/articulo')}}"><i class="fa fa-circle-o"></i> Artículos</a></li>
-                <li><a href="{{url('almacen/categoria')}}"><i class="fa fa-circle-o"></i> Categorías</a></li>
-              </ul>
-            </li>
-            <li>
+				</div>
+					<ul class="social-info">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+			</div>
+			
+		</div>
+					
+	</header>
+	<section id="banner" class="wow fadeInUp">
+					
+        <div class="container">
+            <div class="row">
+		  		@yield('contenido')
+			</div>
+			<li>
               <a href="#">
                 <i class="fa fa-plus-square"></i> <span>IMPRIMIR</span>
                 <small class="label pull-right bg-red">PDF</small>
               </a>
             </li>
-          </ul>
-        </section>
-        <!-- /.sidebar -->
-</div>
-
-
-
-
-
-       <!--Contenido-->
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        
-        <!-- Main content -->
-        <section class="content">
-          
-          <div class="row">
-            <div class="col-md-12">
-              <div class="box">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Productos de la farmacia</h3>
-                  <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                  </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  	<div class="row">
-	                  	<div class="col-md-12">
-		                          <!--Contenido-->
-                              @yield('contenido')
-		                          <!--Fin Contenido-->
-                           </div>
-                        </div>
-		                    
-                  		</div>
-                  	</div><!-- /.row -->
-                </div><!-- /.box-body -->
-              </div><!-- /.box -->
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-
-        </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
-      <!--Fin-Contenido-->
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 1.0
         </div>
-        <strong>FIS &copy; UNCP <a href="www.uncp.com">uncp</a>.</strong> All rights reserved
-      </footer>
+    </section>
+					
+    <footer class="wow fadeInUp" data-wow-delay=".8s">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                        <a class="footer-logo"href="#">
+                            <img class="img-responsive" src="images/footer-logo.png" alt="">
+                        </a>
+                    <p>FIS©UNCP</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
 
-      
-    <!-- jQuery 2.1.4 -->
-    <script src="{{asset('js/jQuery-2.1.4.min.js')}}"></script>
-    <!-- Bootstrap 3.3.5 -->
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <!-- AdminLTE App -->
-    <script src="{{asset('js/app.min.js')}}"></script>
-    
-  </body>
+</body>
 </html>

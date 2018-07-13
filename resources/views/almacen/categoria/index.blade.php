@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>Listado de Categorías <a href="categoria/create"><button class="btn btn-success">Nuevo</button></a></h3>
+		<h3>Listado de productos<a href="categoria/create"><button class="btn btn-success">Nuevo</button></a></h3>
 		@include('almacen.categoria.search')
 	</div>
 </div>
@@ -14,7 +14,7 @@
 				<thead>
 					<th>Id</th>
 					<th>Nombre</th>
-					<th>Descripción</th>
+					<th>cantidad</th>
 					<th>Opciones</th>
 				</thead>
                @foreach ($categorias as $cat)

@@ -14,7 +14,7 @@
 				<thead>
 					<th>Id</th>
 					<th>Nombre</th>
-					<th>cantidad</th>
+					<th>Cantidad</th>
 					<th>Opciones</th>
 				</thead>
                @foreach ($categorias as $cat)

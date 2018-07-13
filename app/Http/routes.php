@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Route::resource('almacen/productos','CategoriaController');
+Route::resource('almacen/categoria','CategoriaController');
 Route::resource('almacen/articulo','ArticuloController');
 
 Route::auth();

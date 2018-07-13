@@ -119,7 +119,7 @@
 			</div>
 			<li>
               <a href="#">
-                <i class="fa fa-plus-square"></i> <span>IMPRIMIR</span>
+                <i class="fa fa-plus-square"></i> <span>--></span>
                 <small class="label pull-right bg-red">PDF</small>
               </a>
             </li>

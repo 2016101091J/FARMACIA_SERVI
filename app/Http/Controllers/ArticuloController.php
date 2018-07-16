@@ -1,5 +1,5 @@
-<?php
-
+/*<?php
+/*
 namespace sisVentas\Http\Controllers;
 
 use Illuminate\Http\Request;
